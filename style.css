@@ -1,0 +1,425 @@
+/*style.css*/
+/*done by S.E*/
+
+/* style the header*/
+.header{
+	padding: 60px;
+	text-align: center; /* keep tects in the centre*/
+	background-color: #036042; /*green*/
+	color: ghostwhite;
+	margin: 0px;
+}
+/* style the header's text*/
+.header h1{
+	font-size: 100px;
+	font-display: initial;
+	color: ghostwhite;
+	float: top;
+}
+/* style the navbar*/	
+.navbar{
+	background-color: #01b282; /*green*/
+	overflow: hidden;
+	padding: 20px;
+	text-decoration: none;
+}
+/*the navbar text*/
+.navbar a{
+	display: black;
+	color: ghostwhite;
+	text-decoration: none;
+	padding: 80px 35px;
+}
+/*navbar changes color as it is hoovered on*/
+.navbar a:hover{
+	background-color: beige;
+	color: burlywood;
+}
+/*image is on the right of the page*/
+.sustainible{
+	float: right;
+	padding: 15px;
+}
+/*image is on left of the page*/
+.sustainible2{
+	float: left;
+	padding: 15px;
+}
+/*main body (form) is in the centre of the page*/
+.main{
+	text-align: center !important; 
+}
+/* done by C.M*/
+.gallery {
+    --s: 120px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale */
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 110%;
+    min-width: 110%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+.gallery1 {
+    --s: 120px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale*/ 
+    float: left;
+    width: 30%;
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery1 > img {
+    width: 0;
+    height: 0;
+    min-height: 110%;
+    min-width: 110%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery1 img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+.gallery2 {
+    --s: 120px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale */
+    float: far-right;
+    top: 0;
+  
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery2 > img {
+    width: 0;
+    height: 0;
+    min-height: 110%;
+    min-width: 110%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery2 img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* done by S.E*/
+
+/* style the body*/
+body {
+  place-content: center;
+  background: burlywood;
+}
+
+/*style the footer*/
+.footer{
+	padding: 60px;
+	text-align: center;
+	background-color: #036042;
+	color: ghostwhite;
+    position: relative;
+	bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    padding: 30px;
+    text-align: center;
+    background-color: #036042;
+    color: ghostwhite;
+    position: relative;
+    bottom: 0px;
+    top: 690px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* for 980px or less(blue)*/
+@media screen and (max-width: 980px){
+    .header{
+        width: 95%;
+    }
+    .navbar{
+        width: 65%;
+    }
+    .main{
+        width: 95%;
+        height: 300px;
+
+    }
+    .footer{
+        bottom: 0px;
+    }
+
+}
+
+/* for 700px or less*/
+@media screen and (max-width: 700px){
+    .header{
+        width: auto;
+    }
+    .navbar{
+        width: auto;
+
+    }
+    .main{
+        width: auto;
+        height: auto;
+    }
+    .sustainible{
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+    .sustainible2{
+        width: 90%;
+        float: right;
+        margin: auto;
+    }
+    .footer{
+        bottom: 0px;
+    }
+
+}
+
+/*for 480px or less*/
+@media screen and (max-width: 480px){
+    .header{
+        height: auto;
+    }
+    h1{
+        font-size: 1.875em;
+    }
+    .navbar{
+        width: auto;
+        display: flex;
+    }
+    .main{
+        width: auto;
+        height: auto;
+    }
+    .sustainible{
+        bottom: 20px;
+        margin: 10px;
+
+    }
+    .sustainible2{
+        float: none;
+        margin: 10px;
+
+    }
+    .footer{
+        bottom: 0px;
+    }
+}
+/* done by F.S*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; 
+}
+body {
+  background-color: #burlywood; /* changing the colour of the background */
+}
+/* changing up the container in the middle: colour, size, position, etc. */
+.container {
+  font-size: 25px;
+  background-color: #ffffff; /* white */
+  width: 90vw; /* viewport's width, 1% per 1vw */
+  max-width: 34em; /* em is a unit, where 1 em is equal to the current font size of the parent element, meaning that 2 em is equal to 2 times the font size of the parent element */
+  position: absolute;    
+  transform: translate(-50%, -50%);  
+  top: 50%;
+  left: 50%;
+  padding: 3.0em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+/* making the text allign the center of the container */
+#options-container {
+  text-align: center;
+}
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+/* adjusting the size and colour of the buttons */
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 5px solid #000000;
+  background-color: #ffffff; /*white*/
+  color: #000000; /*black*/
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/* making the container that weren't chosen gray */
+#options-container button:disabled {
+  border: 4px solid #808080;
+  color: #808080;
+  background-color: #efefef;
+}
+#options-container button.active {
+  background-color: #8c52ff; /* purple */
+  border: 3px solid #000000; /* black */
+  color: #fff; /* white written in shorthand notation */
+}
+/* adjusting the container with letters: spacing between them, wrapping the text, etc. */
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+/* adjusting the inside of the container with letters: background color of them, size, and shape through border raius */
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 1.3em;
+  background-color: #ffffff; /* white */
+  cursor: pointer;
+}
+/* adjusting the game over screen after a game round is finished */
+.new-game-popup {
+  background-color: #ffffff; /* white */
+  position: absolute; /* it is set to position: absolute to not affect other elements on the page */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+/* adjusting the section the letters appear after pressing them */
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+/* Setting up the canvas (box) around the hangman figure */
+canvas {
+  display: block;
+  margin: auto; 
+  border: 12px solid #8c52ff; /* purple */
+  border-radius: 10px;
+}
+/* makes the new game button dissapear letting it move onto the next screen
+    if removed the game won't function properly*/
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+/* Adjusts the message you get after the end of a round */
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+/* Adjusts the text which shows the result of the round*/   
+#result-text span {
+  font-weight: 700;
+}
+/* Adjusts the "new game" button, that shows up after finishing a round */
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #8c52ff; /* purple */
+  border: 3px solid #000000; /* black */
+  color: #fff; /* white written in a shorthand notation*/
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.win-msg {
+  color: #39d78d; /* greenish */
+}
+.lose-msg {
+  color: #fe5152; /* red */
+}
+
+/*Setting up a navbar */
+.sidenav {
+    height: 100%; 
+    width: 160px; /
+    position: fixed; /* Sidebar stays in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* Changes the style depending on the screen size */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
