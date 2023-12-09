@@ -1,0 +1,91 @@
+<!-- done by S.E -->
+<!-- Form for webpage -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Shemen's Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/external.js"></script>
+  </head>
+  <body>
+  	<!--header-->
+  	<div class="header"> <!-- create header class to be able to style it in the css -->
+  		<h1>Sign Up Today!!</h1>
+  		<h3>Help keep a sustainible world and sign up today to receive offer and oppurtunity to keep our work </h3>
+  	</div>
+  	<!-- navbar-->
+  	<div class="navbar"> <!-- create navbar class to be able to style it in the css -->
+  		<a href="gallery.html" target="blank">Home</a> <!-- target='black" make sure that as you click on the webpage it goes to a new page -->
+        <a href="game.html" target="blank">Game</a>
+        <a href="form.html" target="blank">Sign Up Today</a>
+    </div>
+    <div class="sustainible"> <!-- create sustainible class to be able to style it in the css -->
+    	<img src="images/sustain1.png" alt= "images" width="500" height="300"><br> <!-- break tages so they can be spaces beween images-->
+    	<img src="images/sustain4.png" alt= "images" width="500" height="300">
+    </div>
+    <!-- sepreate the images so that they can be side by side  -->
+    <div class="sustainible2"> <!-- create sustainoble2 class to be able to style it in the css -->
+    	<img src="images/sustain2.png" alt= "images" width="500" height="300"><br> <!-- break tages so they can be spaces beween images-->
+    	<img src="images/sustain3.png" alt= "images" width="500" height="300">
+    </div>
+    
+    <div class="main">  <!-- create main class to be able to style it in the css -->
+
+  	<!-- form --><!-- https://www.w3schools.com/html/html_forms.asp --> 
+  	<!-- https://www.w3schools.com/js/js_validation.asp -->
+  	<form name="myForm" onsubmit="return validateForm()" method="post"> <!-- js valadation for is connected to an external js file that validates the form being filled-->
+  		<br>
+  		<!-- first name -->
+  		<label for="fname">First name:</label><br><br> <!-- break tages so they can be spaces beween the form question -->
+  		<input type="text" id="fname" name="fname" required><br><br> <!-- input for the form user must answer it -->
+  		<!-- last name -->
+  		<label for="lname">Last name:</label><br><br>
+  		<input type="text" id="lname" name="lname" required><br><br>
+  		<!-- DOB -->
+  		<label for="DOB">Date of Birth:</label><br><br>
+  		<input type="date" id="DOB" name="DOB" required><br><br>
+  		<!-- email -->
+  		<label for="email">Email:</label><br><br>
+  		<input type="email" id="email" name="email" required><br><br>
+  		
+        <!-- phone number -->
+  		<label for="pnum">Phone Number:</label><br><br>
+  		<input type="text" id="pnum" name="pnum"><br><br>
+        <!-- gender -->
+        <label for="text">Gender</label><br><br>
+  	    <input type="radio" id="male" name="gender" value="Male">
+	    <label for="text">Male</label><br>
+	    <input type="radio" id="css" name="gender" value="Female">
+	    <label for="text">Female</label><br>
+	    <input type="radio" id="javascript" name="gender" value="Other">
+	    <label for="">Other</label><br><br>
+
+	    <!-- country -->
+	    <label for="country">Contry:</label><br><br>
+	    <input type="country" id="country" name="country"><br><br>
+
+        
+        <!-- register -->
+        <input type="submit" value="Register">
+
+
+   </form>
+   </div>
+   <br><br><br><br>
+
+   <!-- Footer -->
+	<div class="footer">
+		<h1>Shemen Eroje</h1>
+		<p>This is page was made by Shemen Eroje</p>
+		<h8>x23337261</h8>
+	</div>
+
+  </body>
+</html>
+
+
+
+
+
